@@ -21,14 +21,13 @@ function throwFrisbee(dogName, dogBreed) {
 
 function walkHome(dogName, dogBreed) {
   console.log(`Walk home with ${dogName} the ${dogBreed}`);
-  return 
+  return `Walk home with ${dogName} the ${dogBreed}`;
 }
 
 function unleashDog(dogName, dogBreed) {
   console.log(`Unleash  ${dogName} the ${dogBreed}`);
+  return `Unleash  ${dogName} the ${dogBreed}`;
 }
-
-console.log(wakeDog("a","b"))
 
 
 const routine = [wakeDog(dogName,dogBreed), leashDog(dogName,dogBreed), walkToPark(dogName,dogBreed), throwFrisbee(dogName,dogBreed), walkHome(dogName,dogBreed), unleashDog(dogName,dogBreed)];

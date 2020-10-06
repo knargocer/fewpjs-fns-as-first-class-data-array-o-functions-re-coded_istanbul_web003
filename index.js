@@ -33,11 +33,12 @@ function unleashDog(dogName, dogBreed) {
 
 
 function exerciseDog(dogName,dogBreed) {
-  const routine = [wakeDog(dogName,dogBreed), leashDog(dogName,dogBreed), walkToPark(dogName,dogBreed), throwFrisbee(dogName,dogBreed), walkHome(dogName,dogBreed), unleashDog(dogName,dogBreed)];
+  
+  const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
   
   const result = [];
   for(let i = 0 ; i<routine.length ; i++){
-        result.push(routine[i]);
+        result.push(routine[i](dogName,dogBreed));
   }
   return results;
 }
